@@ -39,7 +39,12 @@ public class TC_PDPTest_006 extends BaseClass {
 
 			if (productname.contains("HPE Solutions with Qumulo")) {
 				Thread.sleep(3000);
-				driver.findElement(By.xpath("//a[@class='enable-analytics brand-color']")).click();
+				System.out.println("Selected product names are " + productname);
+				
+				
+				WebElement prodtitle = driver.findElement(By.xpath("//a[contains(text(),'HPE Solutions with Qumulo')]"));
+				JavascriptExecutor clickprodtitle = (JavascriptExecutor) driver;
+				clickprodtitle.executeScript("arguments[0].click();", prodtitle);
 				break;
 			}
 		}
@@ -51,7 +56,7 @@ public class TC_PDPTest_006 extends BaseClass {
 		for (int i = 0; i < pdpproduts.size(); i++) {
 			String pdpproductname = pdpproduts.get(i).getText();
 			// System.out.println(i);
-			System.out.println("product names are " + pdpproductname);
+			System.out.println("pdp names are " + pdpproductname);
 
 			if (pdpproductname.contains("HPE Apollo 4200 Gen10 Plus 36TB 25Gb TAA‑compliant Node for Qumulo")) {
 				Thread.sleep(3000);

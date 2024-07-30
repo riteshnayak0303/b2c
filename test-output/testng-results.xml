@@ -1,34 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-25T15:36:41 IST" name="Suite" finished-at="2024-07-25T15:44:03 IST" duration-ms="441544">
+  <suite started-at="2024-07-30T15:53:00 IST" name="Suite" finished-at="2024-07-30T15:53:59 IST" duration-ms="59161">
     <groups>
     </groups>
-    <test started-at="2024-07-25T15:36:41 IST" name="Test" finished-at="2024-07-25T15:44:03 IST" duration-ms="441544">
-      <class name="com.hpeb2c.testcases.TC_CategoryTest_004">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.hpeb2c.testcases.TC_CategoryTest_004@2d901eb0]" started-at="2024-07-25T15:37:33 IST" name="setup" finished-at="2024-07-25T15:37:44 IST" duration-ms="10893" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Categorylinks()[pri:0, instance:com.hpeb2c.testcases.TC_CategoryTest_004@2d901eb0]" started-at="2024-07-25T15:37:44 IST" name="Categorylinks" finished-at="2024-07-25T15:38:24 IST" duration-ms="40880" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Categorylinks -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hpeb2c.testcases.TC_CategoryTest_004@2d901eb0]" started-at="2024-07-25T15:38:24 IST" name="tearDown" finished-at="2024-07-25T15:38:24 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.hpeb2c.testcases.TC_CategoryTest_004 -->
+    <test started-at="2024-07-30T15:53:00 IST" name="Test" finished-at="2024-07-30T15:53:59 IST" duration-ms="59161">
       <class name="com.hpeb2c.testcases.TC_PDPTest_006">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.hpeb2c.testcases.TC_PDPTest_006@3f191845]" started-at="2024-07-25T15:39:19 IST" name="setup" finished-at="2024-07-25T15:39:31 IST" duration-ms="11941" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.hpeb2c.testcases.TC_PDPTest_006@6a78afa0]" started-at="2024-07-30T15:53:00 IST" name="setup" finished-at="2024-07-30T15:53:12 IST" duration-ms="11781" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="pdp(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.hpeb2c.testcases.TC_PDPTest_006@3f191845]" started-at="2024-07-25T15:39:31 IST" name="pdp" data-provider="ValidLoginData" finished-at="2024-07-25T15:40:28 IST" duration-ms="57372" status="PASS">
+        <test-method signature="pdp(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.hpeb2c.testcases.TC_PDPTest_006@6a78afa0]" started-at="2024-07-30T15:53:12 IST" name="pdp" data-provider="ValidLoginData" finished-at="2024-07-30T15:53:59 IST" duration-ms="46522" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,205 +39,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pdp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hpeb2c.testcases.TC_PDPTest_006@3f191845]" started-at="2024-07-25T15:40:28 IST" name="tearDown" finished-at="2024-07-25T15:40:28 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hpeb2c.testcases.TC_PDPTest_006@6a78afa0]" started-at="2024-07-30T15:53:59 IST" name="tearDown" finished-at="2024-07-30T15:53:59 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.hpeb2c.testcases.TC_PDPTest_006 -->
-      <class name="com.hpeb2c.testcases.TC_CreateQuoteTest_008">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.hpeb2c.testcases.TC_CreateQuoteTest_008@72cc7e6f]" started-at="2024-07-25T15:41:49 IST" name="setup" finished-at="2024-07-25T15:42:43 IST" duration-ms="54646" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="createQuote(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.hpeb2c.testcases.TC_CreateQuoteTest_008@72cc7e6f]" started-at="2024-07-25T15:42:43 IST" name="createQuote" data-provider="ValidLoginData" finished-at="2024-07-25T15:44:03 IST" duration-ms="79663" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sanitycheck9250@yopmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Tesh@1234]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Valid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createQuote -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hpeb2c.testcases.TC_CreateQuoteTest_008@72cc7e6f]" started-at="2024-07-25T15:44:03 IST" name="tearDown" finished-at="2024-07-25T15:44:03 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.hpeb2c.testcases.TC_CreateQuoteTest_008 -->
-      <class name="com.hpeb2c.testcases.TC_CreateAccountTest_003">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.hpeb2c.testcases.TC_CreateAccountTest_003@1349883]" started-at="2024-07-25T15:36:42 IST" name="setup" finished-at="2024-07-25T15:36:54 IST" duration-ms="12226" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="createacc()[pri:0, instance:com.hpeb2c.testcases.TC_CreateAccountTest_003@1349883]" started-at="2024-07-25T15:36:54 IST" name="createacc" finished-at="2024-07-25T15:37:01 IST" duration-ms="6664" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createacc -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hpeb2c.testcases.TC_CreateAccountTest_003@1349883]" started-at="2024-07-25T15:37:01 IST" name="tearDown" finished-at="2024-07-25T15:37:01 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.hpeb2c.testcases.TC_CreateAccountTest_003 -->
-      <class name="com.hpeb2c.testcases.TC_CartTest_007">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.hpeb2c.testcases.TC_CartTest_007@5f049ea1]" started-at="2024-07-25T15:40:28 IST" name="setup" finished-at="2024-07-25T15:41:04 IST" duration-ms="35815" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="cartPage(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.hpeb2c.testcases.TC_CartTest_007@5f049ea1]" started-at="2024-07-25T15:41:04 IST" name="cartPage" data-provider="ValidLoginData" finished-at="2024-07-25T15:41:49 IST" duration-ms="44453" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sanitycheck9250@yopmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Tesh@1234]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Valid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cartPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hpeb2c.testcases.TC_CartTest_007@5f049ea1]" started-at="2024-07-25T15:41:49 IST" name="tearDown" finished-at="2024-07-25T15:41:49 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.hpeb2c.testcases.TC_CartTest_007 -->
-      <class name="com.hpeb2c.testcases.TC_LoginTest_001">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.hpeb2c.testcases.TC_LoginTest_001@35dab4eb]" started-at="2024-07-25T15:37:01 IST" name="setup" finished-at="2024-07-25T15:37:11 IST" duration-ms="10424" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="InvalidloginTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.hpeb2c.testcases.TC_LoginTest_001@35dab4eb]" started-at="2024-07-25T15:37:12 IST" name="InvalidloginTest" data-provider="LoginData" finished-at="2024-07-25T15:37:22 IST" duration-ms="10535" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sanitycheck@yopmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Tesh@1234]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InvalidloginTest -->
-        <test-method signature="ValidloginTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.hpeb2c.testcases.TC_LoginTest_001@35dab4eb]" started-at="2024-07-25T15:37:22 IST" name="ValidloginTest" data-provider="ValidLoginData" finished-at="2024-07-25T15:37:33 IST" duration-ms="10340" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sanitycheck9250@yopmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Tesh@1234]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Valid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidloginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hpeb2c.testcases.TC_LoginTest_001@35dab4eb]" started-at="2024-07-25T15:37:33 IST" name="tearDown" finished-at="2024-07-25T15:37:33 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.hpeb2c.testcases.TC_LoginTest_001 -->
-      <class name="com.hpeb2c.testcases.TC_PLPTest_005">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.hpeb2c.testcases.TC_PLPTest_005@3ba987b8]" started-at="2024-07-25T15:38:24 IST" name="setup" finished-at="2024-07-25T15:38:35 IST" duration-ms="10939" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="plp(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.hpeb2c.testcases.TC_PLPTest_005@3ba987b8]" started-at="2024-07-25T15:38:35 IST" name="plp" data-provider="ValidLoginData" finished-at="2024-07-25T15:39:19 IST" duration-ms="43256" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sanitycheck9250@yopmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Tesh@1234]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Valid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- plp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hpeb2c.testcases.TC_PLPTest_005@3ba987b8]" started-at="2024-07-25T15:39:19 IST" name="tearDown" finished-at="2024-07-25T15:39:19 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.hpeb2c.testcases.TC_PLPTest_005 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
