@@ -52,8 +52,11 @@ public class TC_CreateQuoteTest_008 extends BaseClass {
 		
 		driver.findElement(By.id("bussines-need")).sendKeys("Test sanity quote");
 		
-		driver.findElement(By.xpath("//div[@class='hpe-input  fe_decision']")).click();
-		
+		//span[contains(text()," You're a decision maker for this solution")]
+
+		WebElement clickslider = driver.findElement(By.xpath("//span[contains(text(),\"You're a decision maker for this solution\")]"));
+		JavascriptExecutor slider = (JavascriptExecutor) driver;
+		slider.executeScript("arguments[0].click();", clickslider);
 		
 		WebElement clickquotebutton1 = driver.findElement(By.id("getQuote"));
 		JavascriptExecutor quotebutton = (JavascriptExecutor) driver;

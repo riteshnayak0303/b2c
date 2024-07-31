@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.hpeb2c.testcases.TC_PDPTest_006">
+      <class name="com.hpeb2c.testcases.TC_PLPTest_005">
         <methods>
+          <include name="plp"/>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="pdp"/>
         </methods>
-      </class> <!-- com.hpeb2c.testcases.TC_PDPTest_006 -->
+      </class> <!-- com.hpeb2c.testcases.TC_PLPTest_005 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-30T15:53:00 IST" name="Suite" finished-at="2024-07-30T15:53:59 IST" duration-ms="59161">
+  <suite started-at="2024-07-31T23:33:52 IST" name="Suite" finished-at="2024-07-31T23:34:48 IST" duration-ms="56229">
     <groups>
     </groups>
-    <test started-at="2024-07-30T15:53:00 IST" name="Test" finished-at="2024-07-30T15:53:59 IST" duration-ms="59161">
-      <class name="com.hpeb2c.testcases.TC_PDPTest_006">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.hpeb2c.testcases.TC_PDPTest_006@6a78afa0]" started-at="2024-07-30T15:53:00 IST" name="setup" finished-at="2024-07-30T15:53:12 IST" duration-ms="11781" status="PASS">
+    <test started-at="2024-07-31T23:33:52 IST" name="Test" finished-at="2024-07-31T23:34:48 IST" duration-ms="56229">
+      <class name="com.hpeb2c.testcases.TC_PLPTest_005">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.hpeb2c.testcases.TC_PLPTest_005@6a78afa0]" started-at="2024-07-31T23:33:52 IST" name="setup" finished-at="2024-07-31T23:34:02 IST" duration-ms="10332" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="pdp(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.hpeb2c.testcases.TC_PDPTest_006@6a78afa0]" started-at="2024-07-30T15:53:12 IST" name="pdp" data-provider="ValidLoginData" finished-at="2024-07-30T15:53:59 IST" duration-ms="46522" status="PASS">
+        <test-method signature="plp(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.hpeb2c.testcases.TC_PLPTest_005@6a78afa0]" started-at="2024-07-31T23:34:03 IST" name="plp" data-provider="ValidLoginData" finished-at="2024-07-31T23:34:48 IST" duration-ms="44901" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -38,12 +38,12 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pdp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hpeb2c.testcases.TC_PDPTest_006@6a78afa0]" started-at="2024-07-30T15:53:59 IST" name="tearDown" finished-at="2024-07-30T15:53:59 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- plp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hpeb2c.testcases.TC_PLPTest_005@6a78afa0]" started-at="2024-07-31T23:34:48 IST" name="tearDown" finished-at="2024-07-31T23:34:48 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.hpeb2c.testcases.TC_PDPTest_006 -->
+      </class> <!-- com.hpeb2c.testcases.TC_PLPTest_005 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -39,32 +39,43 @@ public class TC_PLPTest_005 extends BaseClass {
 
 			if (productname.contains("HPE ProLiant ML110 Gen11")) {
 				Thread.sleep(3000);
-				driver.findElement(By.xpath("//a[@class='enable-analytics brand-color']")).click();
+				
+				WebElement  plpprod = driver.findElements(By.xpath("//a[@class='enable-analytics brand-color']")).get(i);
+				JavascriptExecutor clickplpprod = (JavascriptExecutor) driver;
+				clickplpprod.executeScript("arguments[0].click();",plpprod);
+				
 				break;
 			}
 		}
-		//h2[@class='hpe-headline hpe-headline--strong hpe-headline--small hpe-product-list__name']
 		
+		driver.findElement(By.xpath("//div[contains(text(),'Select model')]")).click();
 		
-		List<WebElement> btn = driver.findElements(By.xpath(
-				"//div[@class='hpe-product-list__meta row product-models-slot']"));
-		for (int i = 0; i < btn.size(); i++) {
+		//Thread.sleep(5000);
+		
+		List<WebElement> btn = driver.findElements(By.xpath("//div[@class='col-md-9 hpe-full-bleed--mobile productModels']"));
+		for (int i = 0; i < btn.size(); i++)
+		{
 			String productname = btn.get(i).getText();
-			// System.out.println(i);
+			
 			System.out.println("product names are " + productname);
 
-			if (productname.contains("Request Quote")) {
-				Thread.sleep(3000);
+			 if (productname.contains("5416S 2.0GHz 16‑core 1P 32GB‑R VROC 8SFF 800W RPS Server")) 
 				
-				WebElement  requestquote = driver.findElement(By.xpath("//button[contains(text(),'Request Quote')]"));
+			{
+				System.out.println("selected product names are " + productname);
+				
+				Thread.sleep(3000);
+			
+				WebElement  requestquote = driver.findElements(By.xpath("//button[@onclick='getquote(this)']")).get(i);
 				JavascriptExecutor clickquotebutton = (JavascriptExecutor) driver;
 				clickquotebutton.executeScript("arguments[0].click();",requestquote);
+				
 				break;
-			}
+			} 
+		
 		}
 		
-		
-		
+			
 	
 	}
 
