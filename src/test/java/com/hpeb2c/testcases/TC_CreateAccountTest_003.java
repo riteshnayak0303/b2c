@@ -95,11 +95,9 @@ public void createacc() throws InterruptedException
 	WebElement  createacc4 = driver.findElement(By.xpath("//span[contains(text(),'Activate HPE Account')]"));
 	JavascriptExecutor js4 = (JavascriptExecutor) driver;
 	js4.executeScript("arguments[0].click();",createacc4);*/
-	
-	
-
-
-
 }
+
+
+
 
 }

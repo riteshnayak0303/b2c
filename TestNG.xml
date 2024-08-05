@@ -12,13 +12,13 @@
     <parameter name="browser" value="chrome"></parameter>
     
     <classes>
-    <!-- <class name="com.hpeb2c.testcases.TC_CreateAccountTest_003"/> 
-     <class name="com.hpeb2c.testcases.TC_LoginTest_001"/>
-   	 <class name="com.hpeb2c.testcases.TC_CategoryTest_004"/> -->
+     <class name="com.hpeb2c.testcases.TC_CreateAccountTest_003"/>
+     <class name="com.hpeb2c.testcases.TC_LoginTest_001"/> 
+   	 <class name="com.hpeb2c.testcases.TC_CategoryTest_004"/> 
    	 <class name="com.hpeb2c.testcases.TC_PLPTest_005"/> 
-   	<!-- <class name="com.hpeb2c.testcases.TC_PDPTest_006"/> 
-    <class name="com.hpeb2c.testcases.TC_CartTest_007"/> 
-   	 <class name="com.hpeb2c.testcases.TC_CreateQuoteTest_008"/>	-->
+   	 <class name="com.hpeb2c.testcases.TC_PDPTest_006"/> 
+     <class name="com.hpeb2c.testcases.TC_CartTest_007"/>
+   	 <class name="com.hpeb2c.testcases.TC_CreateQuoteTest_008"/>
    	</classes> 
  
  
