@@ -29,7 +29,7 @@ public class TC_CreateQuoteTest_008 extends BaseClass {
 
 		lp.enterPassword(password);
 		lp.clickonsign2();
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		// <!--Clicks on RequestQuote button>
 		driver.findElement(By.xpath("//a[@title='Shopping Cart']")).click();
 		driver.findElement(By.xpath("//button[contains(text(),'Request Quote')]")).click();
@@ -41,6 +41,7 @@ public class TC_CreateQuoteTest_008 extends BaseClass {
 		driver.findElement(By.id("last-name")).clear();
 		driver.findElement(By.id("last-name")).sendKeys("test");
 		
+		driver.findElement(By.id("company")).sendKeys("HPE");
 		
 		WebElement radiobtn = driver.findElement(By.xpath("//label[@for='quoteemailcontactrad']"));
 		JavascriptExecutor clickquotebutton = (JavascriptExecutor) driver;
@@ -67,7 +68,7 @@ public class TC_CreateQuoteTest_008 extends BaseClass {
 		JavascriptExecutor quotebutton2 = (JavascriptExecutor) driver;
 		quotebutton2.executeScript("arguments[0].click();", clickquotebutton11);
 		
-		Thread.sleep(6000);
+		Thread.sleep(20000);
 		Set <String>  s1 =driver.getWindowHandles();
 		for(String i:s1) {
 			//System.out.println(i);

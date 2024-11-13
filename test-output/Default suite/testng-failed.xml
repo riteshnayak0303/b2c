@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.hpeb2c.testcases.TC_CategoryTest_004">
+      <class name="com.hpeb2c.testcases.TC_CreateAccountTest_003">
         <methods>
+          <include name="createacc"/>
           <include name="tearDown"/>
-          <include name="Categorylinks"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.hpeb2c.testcases.TC_CategoryTest_004 -->
+      </class> <!-- com.hpeb2c.testcases.TC_CreateAccountTest_003 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

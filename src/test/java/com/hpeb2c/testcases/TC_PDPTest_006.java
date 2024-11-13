@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import com.hpeb2c.pageObjects.BaseClass;
 import com.hpeb2c.pageObjects.LoginPage;
+import com.hpeb2c.pageObjects.PDPPage;
 import com.hpeb2c.utilities.DataProviders;
 
 public class TC_PDPTest_006 extends BaseClass {
@@ -17,6 +18,11 @@ public class TC_PDPTest_006 extends BaseClass {
 	public void pdp(String username, String password, String exp) throws InterruptedException {
 
 		LoginPage lp = new LoginPage(driver);
+		PDPPage pdp = new PDPPage(driver);
+		
+		
+		
+		
 		lp.myacc().click();
 		lp.hpeStoreLoginButton();
 
@@ -27,55 +33,65 @@ public class TC_PDPTest_006 extends BaseClass {
 		lp.enterPassword(password);
 		lp.clickonsign2();
 		Thread.sleep(5000);
-		driver.findElement(By.linkText("Storage")).click();
-		driver.findElement(By.xpath("//h3[contains(text(),'File Storage')]")).click();
-
-		List<WebElement> prodnames = driver.findElements(By.xpath(
-				"//h2[@class='hpe-headline hpe-headline--strong hpe-headline--small hpe-product-list__name hpe-headline-reduced']"));
-		for (int i = 0; i < prodnames.size(); i++) {
-			String productname = prodnames.get(i).getText();
+		
+		//Click on Storage category link 
+		pdp.storage();
+		
+		//Click filestorage tile 
+		JavascriptExecutor clickcat = (JavascriptExecutor) driver;
+		clickcat.executeScript("arguments[0].click();", pdp.fileStorage());
+		
+		
+		//Click on Product from category list page
+		for (int i = 0; i < pdp.categoryproductTitle().size(); i++) {
+			String catgoryproductTitle = pdp.categoryproductTitle().get(i).getText();
 			// System.out.println(i);
-			System.out.println("product names are " + productname);
+			System.out.println("product names are " + catgoryproductTitle);
 
-			if (productname.contains("HPE Solutions with Qumulo")) {
+			if (catgoryproductTitle.contains("HPE Solutions with Qumulo")) {
 				Thread.sleep(3000);
-				System.out.println("Selected product names are " + productname);
+				System.out.println("Selected product names are " + catgoryproductTitle);
 				
-				
-				WebElement prodtitle = driver.findElement(By.xpath("//a[contains(text(),'HPE Solutions with Qumulo')]"));
+			WebElement plpprodtitle = pdp.plpproductTitle().get(i);
 				JavascriptExecutor clickprodtitle = (JavascriptExecutor) driver;
-				clickprodtitle.executeScript("arguments[0].click();", prodtitle);
+				clickprodtitle.executeScript("arguments[0].click();", plpprodtitle);
 				break;
 			}
 		}
 
+		
 		// <!--Clicks on Variant product and navigates to PDP>
 		
-		List<WebElement> pdpproduts = driver.findElements(By
-				.xpath("//h2[@class='hpe-headline hpe-headline--strong hpe-headline--small hpe-product-list__name']"));
-		for (int i = 0; i < pdpproduts.size(); i++) {
-			String pdpproductname = pdpproduts.get(i).getText();
+			//List<WebElement> pdpproduts = pdp.variantroductTitle();
+		  for (int i = 0; i < pdp.variantroductTitle().size(); i++) {
+			String pdpproductnamee = pdp.variantroductTitle().get(i).getText();
 			// System.out.println(i);
-			System.out.println("pdp names are " + pdpproductname);
+			System.out.println("pdp names are " + pdpproductnamee);
+		
 
-			if (pdpproductname.contains("HPE Apollo 4200 Gen10 Plus 36TB 25Gb TAA‑compliant Node for Qumulo")) {
+
+		//Click on Variant product name
+			
+			if (pdpproductnamee.contains("HPE Apollo 4200 Gen10 Plus 36TB 25Gb TAA‑compliant Node for Qumulo")) {
 				Thread.sleep(3000);
-				// driver.findElement(By.xpath("//a[@class='hpe-anchor
-				// hpe-anchor--primary']")).click();
+				
 
-				WebElement pdpproduct = driver.findElement(By.xpath("//a[@class='hpe-anchor hpe-anchor--primary']"));
+				WebElement pdpproduct = pdp.Variantroductname().get(i);
 				JavascriptExecutor clickquotebutton = (JavascriptExecutor) driver;
 				clickquotebutton.executeScript("arguments[0].click();", pdpproduct);
 				break;
 			}
 		}
-
-		WebElement getquotebtn = driver.findElement(By.xpath("//div[contains(text(),'Get Quote')]"));
+		  Thread.sleep(3000);
+		 //Click on quote button
+		WebElement getquotebtn = pdp.Quotebutton();
 		JavascriptExecutor clickquotebutton = (JavascriptExecutor) driver;
 		clickquotebutton.executeScript("arguments[0].click();", getquotebtn);
-
-	
+		
+		
 	
 	}
+
+	
 
 }

@@ -22,7 +22,7 @@ public class TC_LoginTest_001 extends BaseClass{
 		lp.hpeStoreLoginButton();
 		lp.enterUsername(username);
 		lp.clickSignInButton();
-		//Thread.sleep(5000);
+		
 		
 		lp.enterPassword(password);
 		lp.clickonsign2();
@@ -31,8 +31,7 @@ public class TC_LoginTest_001 extends BaseClass{
 		boolean errormessage = lp.displayErrorMsg().isDisplayed();
 		
 		
-		if(exp.equalsIgnoreCase("Invalid"))
-		{
+	
 			if(errormessage==true)
 			{
 				Assert.assertTrue(true);
@@ -40,10 +39,9 @@ public class TC_LoginTest_001 extends BaseClass{
 		
 			else
 			{
-				Assert.assertTrue(false);
+				Assert.fail();
 			}	
-		}
-		//close icon
+	
 		lp.closeicon();
 	}
 
